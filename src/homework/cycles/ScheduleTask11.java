@@ -1,4 +1,4 @@
-package Homework;
+package homework.cycles;
 
 public class ScheduleTask11 {
 
@@ -29,6 +29,9 @@ public class ScheduleTask11 {
             case 7:
                 System.out.println("1) Sleep");
                 break;
+            default:
+                System.out.println("Bro, you should be kind <3");
+
 
         }
     }

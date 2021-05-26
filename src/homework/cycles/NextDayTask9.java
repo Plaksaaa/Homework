@@ -1,4 +1,4 @@
-package Homework;
+package homework.cycles;
 
 public class NextDayTask9 {
     public static void main(String[] args) {
@@ -11,7 +11,10 @@ public class NextDayTask9 {
             if (dayOfSummer == 31) {
                 monthOfSummer++;
                 dayOfSummer = 1;
-
+                if (monthOfSummer == 9){
+                    monthOfSummer = 6;
+                    year++;
+                }
             }else {
                 dayOfSummer++;
             }
