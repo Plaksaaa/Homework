@@ -7,13 +7,13 @@ public class GuitarService {
     private int weight;
     private int strings;
     private String color;
-    private String f;
+    private String form;
 
-    public GuitarService(int weight, int strings, String color, String f) {
+    public GuitarService(int weight, int strings, String color, String form) {
         this.weight = weight;
         this.strings = strings;
         this.color = color;
-        this.f = f;
+        this.form = form;
     }
 
     public GuitarService() {
@@ -43,12 +43,12 @@ public class GuitarService {
         this.color = color;
     }
 
-    public String getF() {
-        return f;
+    public String getForm() {
+        return fform;
     }
 
-    public void setF(String f) {
-        this.f = f;
+    public void setFform(String form) {
+        this.form = form;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class GuitarService {
                 "weight=" + weight +
                 ", strings=" + strings +
                 ", color='" + color + '\'' +
-                ", f='" + f + '\'' +
+                ", form='" + form + '\'' +
                 '}';
     }
 
@@ -69,11 +69,11 @@ public class GuitarService {
         return weight == that.weight &&
                 strings == that.strings &&
                 color.equals(that.color) &&
-                f.equals(that.f);
+                form.equals(that.form);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(weight, strings, color, f);
+        return Objects.hash(weight, strings, color, form);
     }
 }
